@@ -3,27 +3,14 @@
     padding: 0;
     font-family: 'Riffic Free', sans-serif;
     overflow-x: hidden;
-
-
   }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-
-}
 
 /*Navbar*/
 .topnav .hyperlinks{
     float: right;
     text-align: center;
-    text-decoration: none;
+
 }
 .topnav .hyperlinks a{
     padding: 0px 0px 0px 20px;
@@ -57,7 +44,7 @@ body {
     background-image: linear-gradient(to right, #562675,#713c94, #774694, #713c94,#653486,#562675); 
     display: flex;
     flex-direction: column;
-    max-width: 1930px;
+
  }
 
 body ul{
@@ -83,16 +70,12 @@ body ul .image1, .image2{
 }
 
 .HandPhone1 img{
-position: absolute;
-float: right;
-width: 50%;
-bottom: 10rem;
+display: block;
+
 }
 
-.headline{
-    position: absolute;
-    top: 9rem;
-
+.HandPhone2 img{
+   display: none;
 }
 
 .download-btn{
@@ -111,28 +94,24 @@ bottom: 10rem;
 }
 .apple-btn{
     width: 192px;
+}    
+.headline{
+    position: absolute;
+    top: 9rem;
+
 }
-
-       
-
-    
-.tagline{
-
-
+.headline p{
     margin-top: 30vh;
     letter-spacing: 1px;
     font-size: 35px;
     padding-left: 50px;
-
-
 }
-.TrailerLink{
+.headline h1{
     letter-spacing: 5px;
     cursor: pointer;
     z-index: 1000;
     font-size: 80pt;
     padding-left: 50px;
-  
 }
 /* footer */
 .footer{
@@ -175,3 +154,515 @@ footer ul div{
 }
 
 /**/ 
+
+/* Small Desktop devices ( below 1579px) */
+@media screen and (max-width: 1579px) {
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 40%;
+        bottom: 10rem;
+        right: 23rem;
+    }
+
+     
+    .headline{
+
+    }
+
+    .headline p{
+
+    }
+    .headline h1{
+
+    }
+
+      
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .OwareLogo img{
+        position: relative;
+        width: 20rem;
+    }
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 70%;
+        right: 110px;
+        bottom: 330px;
+    }
+
+     .headline p{
+        position: relative;
+        font-size: 30px;
+     }
+     .headline h1{
+        position: relative;
+        top: 300px;
+        font-size: 50px;
+     }
+     
+      .headline{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        top: -50px;
+        right: 20px;
+        height: 800px;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+        background-color: #000000;
+        text-align: center;
+        position: absolute;
+        bottom: -46px;
+        width: 100%;
+    }
+    
+    footer ul{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(156, 156, 156);
+        font-size: 12px;
+    }
+
+    footer p{
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 39rem;
+        left: 180px;
+    }
+    
+
+
+
+}
+@media only screen and (max-width: 690px) {
+
+    .OwareLogo img{
+        position: relative;
+        width: 20rem;
+    }
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 70%;
+        right: 110px;
+        bottom: 330px;
+    }
+
+     .headline p{
+        position: relative;
+        font-size: 25px;
+     }
+     .headline h1{
+        position: relative;
+        top: 300px;
+        right: 20px;
+        font-size: 50px;
+     }
+     
+      .headline{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        top: -50px;
+        right: 10px;
+        height: 800px;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+        background-color: #000000;
+        text-align: center;
+        position: absolute;
+        bottom: -46px;
+        width: 100%;
+    }
+    
+    footer ul{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(156, 156, 156);
+        font-size: 12px;
+    }
+
+    footer p{
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 39rem;
+        left: 130px;
+    }
+}
+@media only screen and (max-width: 425px) {
+
+    * {
+        margin: 0 -4px 0 0;
+        padding: 0;
+        font-family: 'Riffic Free', sans-serif;
+        overflow-x: hidden;
+        
+      }
+
+      .topnav{
+        background-color: #1a1313;
+        height: 70px;
+
+    }
+    
+    .topnav ul{
+        color: #f2f2f2;
+        font-size: 10px;
+        position: relative;
+        right: 110px;
+        top: 40px;
+    }
+    
+    .topnav img{
+        height: 30px;
+        position: relative;
+        left: 150px;
+
+    }
+    .topnav .hyperlinks{
+        display: flex;
+      
+ 
+    
+    }
+
+    .OwareLogo img{
+        position: relative;
+        width: 20rem;
+        left: 10px;
+    }
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 90%;
+        left: 25px;
+        bottom: 370px;
+    }
+
+     .headline p{
+        position: relative;
+        font-size: 16px;
+     }
+     .headline h1{
+        position: relative;
+        top: 290px;
+        right: 10px;
+        font-size: 40px;
+     }
+     
+      .headline{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        top: -50px;
+        right: 10px;
+        height: 800px;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+        background-color: #000000;
+        text-align: center;
+        position: absolute;
+        bottom: -80px;
+        width: 100%;
+    }
+    
+    footer ul{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(156, 156, 156);
+        font-size: 8px;
+    }
+
+    footer p{
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 37rem;
+        left: 30px;
+        
+    }
+
+    .download-btn img{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 425px) {
+
+    * {
+        margin: 0 -5px 0 0;
+        padding: 0;
+        font-family: 'Riffic Free', sans-serif;
+        overflow-x: hidden;
+        
+      }
+
+      .topnav{
+        background-color: #1a1313;
+        height: 70px;
+
+    }
+    
+    .topnav ul{
+        color: #f2f2f2;
+        font-size: 10px;
+        position: relative;
+        right: 95px;
+        top: 40px;
+    }
+    
+    .topnav img{
+        height: 30px;
+        position: relative;
+        left: 125px;
+
+    }
+    .topnav .hyperlinks{
+        display: flex;
+      
+ 
+    
+    }
+
+    .OwareLogo img{
+        position: relative;
+        width: 20rem;
+        left: 1px;
+    }
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 90%;
+        left: 25px;
+        bottom: 400px;
+    }
+
+     .headline p{
+        position: relative;
+        font-size: 14px;
+        right: 10px;
+     }
+     .headline h1{
+        position: relative;
+        top: 290px;
+        right: 10px;
+        font-size: 40px;
+     }
+     
+      .headline{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        top: -50px;
+        right: 10px;
+        height: 800px;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+        background-color: #000000;
+        text-align: center;
+        position: absolute;
+        bottom: -90px;
+        width: 100%;
+    }
+    
+    footer ul{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(156, 156, 156);
+        font-size: 8px;
+    }
+
+    footer p{
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 37rem;
+        left: 30px;
+        
+    }
+
+    .download-btn img{
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width: 320px) {
+
+    * {
+        margin: 0 -7px 0 0;
+        padding: 0;
+        font-family: 'Riffic Free', sans-serif;
+        overflow-x: hidden;
+        
+      }
+
+      .topnav{
+        background-color: #1a1313;
+        height: 70px;
+
+    }
+    
+    .topnav ul{
+        color: #f2f2f2;
+        font-size: 10px;
+        position: relative;
+        right: 80px;
+        top: 10px;
+    }
+    
+    .topnav img{
+        height: 30px;
+        position: relative;
+        left: 100px;
+
+    }
+    .topnav .hyperlinks{
+        display: flex;
+      
+    }
+
+    .OwareLogo img{
+        position: relative;
+        width: 15rem;
+        left: 1px;
+    }
+
+    .HandPhone1 img{
+        display: none;
+    }
+    
+    .HandPhone2 img {
+        display: block;
+        position: absolute;
+        width: 90%;
+        left: 25px;
+        bottom: 400px;
+    }
+
+     .headline p{
+        position: relative;
+        font-size: 11px;
+        right: 10px;
+     }
+     .headline h1{
+        position: relative;
+        top: 290px;
+        right: 10px;
+        font-size: 30px;
+     }
+     
+      .headline{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        top: -50px;
+        right: 10px;
+        height: 800px;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+        background-color: #000000;
+        text-align: center;
+        position: absolute;
+        bottom: -110px;
+        width: 100%;
+    }
+    
+    footer ul{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(156, 156, 156);
+        font-size: 8px;
+        
+    }
+
+    footer p{
+        position: relative;
+        right: 80px;
+    
+
+    }
+
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 35rem;
+        left: 40px;
+        
+    }
+
+    .download-btn img{
+        width: 80%;
+    }
+}
