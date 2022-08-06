@@ -62,7 +62,7 @@ body ul .image1, .image2{
 .logo-container{
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 .OwareLogo img{
     position: relative;
@@ -70,12 +70,22 @@ body ul .image1, .image2{
 }
 
 .HandPhone1 img{
-display: block;
-
+    position: relative;
+    display: block;
+    height: 40em;
+    margin-left: 58em;
+    bottom: 12em;
 }
 
 .HandPhone2 img{
-   display: none;
+   display: block;
+   height: 20em;
+   margin-left: 50em;
+   margin-top: 5em;
+}
+
+.headline-container {
+    line-height: 100px;
 }
 
 .download-btn{
@@ -97,7 +107,7 @@ display: block;
 }    
 .headline{
     position: absolute;
-    top: 9rem;
+    top: 4rem;
 
 }
 .headline p{
@@ -138,8 +148,9 @@ footer{
     text-align:center;
     padding: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: -24px;
     width: 100%;
+    float: right;
 }
 
 footer ul{
@@ -157,34 +168,46 @@ footer ul div{
 
 /* Small Desktop devices ( below 1579px) */
 @media screen and (max-width: 1579px) {
-
-    .HandPhone1 img{
-        display: none;
+    
+    .headline {
+        position: absolute;
+        top: 10rem;
     }
     
     .HandPhone2 img {
-        display: block;
         position: absolute;
-        width: 40%;
-        bottom: 10rem;
-        right: 23rem;
+        bottom: 33rem;
+        right: 28rem;
+        height: 21em;
+    }
+    
+
+    .headline-container{
+        margin-left: 23em;
+        line-height: 306px;
     }
 
+    .download-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        margin-left: 26em;
+        margin-top: 2em;
+    }
+
+    .download-btn img{
+            width: auto;
+            height: 6em;
+           
+        
+    }
      
-    .headline{
 
-    }
 
-    .headline p{
+} 
 
-    }
-    .headline h1{
 
-    }
-
-      
-
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -261,6 +284,11 @@ footer ul div{
 
 }
 @media only screen and (max-width: 690px) {
+
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+    }
 
     .OwareLogo img{
         position: relative;
